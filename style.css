@@ -1,0 +1,353 @@
+body {
+    background-color: #f4f7fa;
+    font-family: Arial, sans-serif;
+    color: #183153;
+    text-align: center;
+}
+
+h1 {
+    color: #087ca7;
+    font-size: 40px;
+}
+
+p {
+    font-size: 18px;
+    color: #526477;
+}
+header {
+    background-color: #183153;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.hero {
+    background-color: #dceef5;
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #183153;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #087ca7;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+<section class="services">
+
+    <h2>Our Services</h2>
+
+    <p class="services-intro">
+        Comprehensive water solutions designed
+        to meet your needs.
+    </p>
+
+    <div class="service-container">
+
+        <div class="service-card">
+            <h3>Hydrogeological Surveys</h3>
+            <p>Professional groundwater exploration and site assessments.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Borehole Drilling</h3>
+            <p>Reliable and efficient borehole drilling solutions.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Pump Installation</h3>
+            <p>Quality water pump installation and maintenance.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Solar Pumping</h3>
+            <p>Energy-efficient solar and hybrid pumping systems.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Water Testing</h3>
+            <p>Water quality analysis and testing services.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Irrigation Solutions</h3>
+            <p>Smart water management and irrigation systems.</p>
+        </div>
+
+    </div>
+
+</section>
+/* Mobile phone layout */
+
+@media (max-width: 768px) {
+
+    .service-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+}
+/* About Us Section */
+
+.about {
+    padding: 80px 30px;
+    background-color: #f4f7fa;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 32px;
+    color: #183153;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #526477;
+}
+/* Projects Section */
+
+.projects {
+    padding: 80px 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.projects h2 {
+    font-size: 32px;
+    color: #183153;
+}
+
+.projects-intro {
+    margin-bottom: 40px;
+    color: #526477;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #f4f7fa;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+.project-image {
+    background-color: #dceef5;
+    padding: 70px 10px;
+    color: #183153;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.project-card h3 {
+    color: #087ca7;
+}
+
+.project-card p {
+    color: #526477;
+    line-height: 1.6;
+    padding: 0 15px;
+}
+/* Contact Section */
+
+.contact {
+    padding: 80px 30px;
+    text-align: center;
+    background-color: #183153;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 32px;
+}
+
+.contact p {
+    color: #dceef5;
+    line-height: 1.8;
+}
+
+.contact-details {
+    margin: 30px 0;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #087ca7;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav {
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+}
+@media (max-width: 768px) {
+
+    .service-container,
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+}
+.service-card {
+    background-color: #ffffff;
+    padding: 35px 25px;
+    border-radius: 10px;
+    border: 1px solid #e2eaf0;
+    box-shadow: 0 5px 15px rgba(24, 49, 83, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(24, 49, 83, 0.15);
+}
+.project-card {
+    border: 1px solid #e2eaf0;
+    box-shadow: 0 5px 15px rgba(24, 49, 83, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+.hero-button,
+.contact-button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-button:hover,
+.contact-button:hover {
+    background-color: #183153;
+    transform: translateY(-3px);
+}
+/* Footer */
+
+.footer {
+    background-color: #101f35;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #dceef5;
+    margin-bottom: 10px;
+}
+
+.footer .copyright {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #aab8c8;
+}
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
